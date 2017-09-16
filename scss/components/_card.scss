@@ -1,0 +1,22 @@
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-card {
+  flex: 1;
+  border: 3px $mid-gray solid;
+  border-radius: 4px;
+  padding: 50px 150px;
+  background: $white;
+  margin: 20px;
+}
+
+.card {
+  margin: 10px;
+  flex: 1;
+  border: 3px $mid-gray solid;
+  border-radius: 4px;
+  padding: 50px 70px;
+  background: $white;
+}
