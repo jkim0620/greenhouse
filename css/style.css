@@ -20,33 +20,40 @@ body {
   margin: 0;
   box-sizing: border-box;
   text-align: center;
-  font-weight: bold;
-  letter-spacing: .61px;
+  font-size: 17px;
   line-height: 25px;
-  size: 17px; }
+  letter-spacing: 0.61px;
+  font-weight: normal; }
 
 h1 {
-  letter-spacing: 1.6px;
+  font-size: 54px;
   line-height: 75px;
-  font-weight: normal;
-  font-size: 54px; }
+  letter-spacing: 1.6px;
+  font-weight: normal; }
 
 h2 {
-  letter-spacing: 1.53px;
+  font-size: 32px;
   line-height: 34px;
-  font-weight: bold;
-  font-size: 32px; }
+  letter-spacing: 1.53px;
+  font-weight: bold; }
 
 h3 {
-  letter-spacing: 1.15px;
+  font-size: 24px;
   line-height: 34px;
-  font-weight: bold;
-  font-size: 24px; }
+  letter-spacing: 1.15px;
+  font-weight: bold; }
 
 h4 {
+  font-size: 26px;
+  line-height: auto;
   letter-spacing: 1.08px;
-  font-weight: normal;
-  font-size: 26px; }
+  font-weight: normal; }
+
+.subhead {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.71px;
+  font-weight: normal; }
 
 a {
   text-decoration: none;
@@ -57,11 +64,11 @@ a:visited {
   color: #686868; }
 
 .header-section {
-  padding-top: 100px; }
+  padding-top: 150px; }
 
 .main-section {
   margin: 0 auto;
-  padding: 50px 200px; }
+  padding: 0 200px 50px 200px; }
 
 .footer-section {
   display: flex;
@@ -86,20 +93,20 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.top-card, .card {
+  background: #ffffff;
+  border: 3px #e2e2e2 solid; }
+
 .top-card {
   flex: 1;
-  border: 3px #e2e2e2 solid;
   border-radius: 4px;
   padding: 50px 150px;
-  background: #ffffff;
-  margin: 20px; }
+  margin-bottom: 20px; }
 
 .card {
   margin: 10px;
   flex: 1;
-  border: 3px #e2e2e2 solid;
   border-radius: 4px;
-  padding: 50px 70px;
-  background: #ffffff; }
+  padding: 50px 70px; }
 
 /*# sourceMappingURL=style.css.map */

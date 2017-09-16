@@ -12,38 +12,27 @@ body {
   margin: 0;
   box-sizing: border-box;
   text-align: center;
-  font-weight: bold;
-  letter-spacing: .61px;
-  line-height: 25px;
-  size: 17px;
+  @include font-style(17px, 25px, .61px, normal);
 }
 
 h1 {
-  letter-spacing: 1.6px;
-  line-height: 75px;
-  font-weight: normal;
-  font-size: 54px;
+  @include font-style(54px, 75px, 1.6px, normal);
 }
 
 h2 {
-  letter-spacing: 1.53px;
-  line-height: 34px;
-  font-weight: bold;
-  font-size: 32px;
+  @include font-style(32px, 34px, 1.53px, bold);
 }
 
 h3 {
-  letter-spacing: 1.15px;
-  line-height: 34px;
-  font-weight: bold;
-  font-size: 24px;
+  @include font-style(24px, 34px, 1.15px, bold);
 }
 
 h4 {
-  letter-spacing: 1.08px;
-  // line-height: 34px;
-  font-weight: normal;
-  font-size: 26px;
+  @include font-style(26px, auto, 1.08px, normal);
+}
+
+.subhead {
+  @include font-style(20px, 27px, .71px, normal);
 }
 
 a {
