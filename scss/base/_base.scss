@@ -7,32 +7,35 @@
 
 body {
   font-family: $primary-font-family;
-  color: $gray;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-align: center;
-  @include font-style(17px, 25px, .61px, normal);
+  @include font-style(17px, 25px, .61px, normal, $gray);
 }
 
 h1 {
-  @include font-style(54px, 75px, 1.6px, normal);
+  @include font-style(54px, 75px, 1.6px, normal, $gray);
 }
 
 h2 {
-  @include font-style(32px, 34px, 1.53px, bold);
+  @include font-style(32px, 34px, 1.53px, bold, $gray);
 }
 
 h3 {
-  @include font-style(24px, 34px, 1.15px, bold);
+  @include font-style(24px, 34px, 1.15px, bold, $gray);
 }
 
 h4 {
-  @include font-style(26px, auto, 1.08px, normal);
+  @include font-style(26px, auto, 1.08px, normal, $gray);
 }
 
 .subhead {
-  @include font-style(20px, 27px, .71px, normal);
+  @include font-style(20px, 27px, .71px, normal, $gray);
+}
+
+p {
+  @include font-style(14px, 22px, .71px, bold, $gray);
 }
 
 a {
