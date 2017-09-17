@@ -4,11 +4,11 @@
 =====================================
 */
 
-@mixin font-style($size, $line-height, $letter-space, $weight, $color) {
+@mixin font-style($size, $line-height, $letter-space, $family, $color) {
   font-size: $size;
   line-height: $line-height;
   letter-spacing: $letter-space;
-  font-weight: $weight;
+  font-family: $family;
   color: $color;
 }
 

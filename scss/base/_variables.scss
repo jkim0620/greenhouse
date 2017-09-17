@@ -20,5 +20,36 @@ Base Font
 =======================
 */
 
+@font-face {
+  font-family: 'Akkurat';
+  src: url('../assets/lineto-akkurat-regular-s.eot'); /* IE9 Compat Modes */
+  src: url('../assets/lineto-akkurat-regular-s.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/lineto-akkurat-regular-s.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/lineto-akkurat-regular-s.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/lineto-akkurat-regular-s.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Akkurat-light';
+  src: url('../assets/lineto-akkurat-light-s.eot'); /* IE9 Compat Modes */
+  src: url('../assets/lineto-akkurat-light-s.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/lineto-akkurat-light-s.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/lineto-akkurat-light-s.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/lineto-akkurat-light-s.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Akkurat-bold';
+  src: url('../assets/lineto-akkurat-bold-s.eot'); /* IE9 Compat Modes */
+  src: url('../assets/lineto-akkurat-bold-s.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/lineto-akkurat-bold-s.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/lineto-akkurat-bold-s.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/lineto-akkurat-bold-s.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 // Main Font Style
-$primary-font-family: "Avenir", "sans-serif";
+$default-font-family: "Avenir", "sans-serif";
+
+$font-regular: "Akkurat";
+$font-light: "Akkurat-light";
+$font-bold: "Akkurat-bold";

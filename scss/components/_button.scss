@@ -1,12 +1,12 @@
 .blue-btn {
-  @include font-style(14px, 20px, 1.17px, bold, $white);
+  @include font-style(14px, 20px, 1.17px, $font-bold, $white);
   @include button-style(auto, auto, 3px, $blue);
   padding: 10px 20px;
   margin-top: 40px;
 }
 
 .link-btn {
-  @include font-style(13px, 20px, 1.17px, normal, $green);
+  @include font-style(13px, 20px, 1.17px, $font-bold, $green);
   @include button-style(auto, auto, none, transparent);
-  margin-top: 40px;
+  margin-top: 10px;
 }
