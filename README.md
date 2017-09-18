@@ -1,6 +1,6 @@
 ## Overview
 
-#### # Built a new Customer Support marketing page from the provided design.
+#### Built a new Customer Support marketing page from the provided design.
 
 ---
 
