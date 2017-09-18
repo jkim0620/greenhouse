@@ -9,7 +9,6 @@ body {
   font-family: $font-regular, $default-font-family;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   text-align: center;
   @include font-style(17px, 25px, .61px, $font-regular, $gray);
 }
@@ -34,6 +33,10 @@ h4 {
   @include font-style(20px, 27px, .71px, $font-regular, $gray);
 }
 
+.font-bold {
+  font-family: $font-regular;
+}
+
 p {
   @include font-style(17px, 26px, .71px, $font-light, $gray);
 }
@@ -46,4 +49,44 @@ a {
 a:visited {
   text-decoration: none;
   color: $gray;
+}
+
+/*
+=======================
+Media Query
+=======================
+*/
+
+// Media Query for tablet or smaller
+@media screen and (max-width: 1100px) {
+  h1 {
+    @include font-style(40px, 60px, 1.6px, $font-light, $gray);
+  }
+
+  h2 {
+    @include font-style(28px, 32px, 1.53px, $font-regular, $gray);
+  }
+
+  h3 {
+    @include font-style(22px, 30px, 1.15px, $font-regular, $gray);
+  }
+
+  h4 {
+    @include font-style(20px, auto, 1.08px, $font-light, $gray);
+  }
+
+  p {
+    @include font-style(14px, 20px, .71px, $font-light, $gray);
+  }
+
+  .subhead {
+    @include font-style(18px, 27px, .71px, $font-regular, $gray);
+  }
+}
+
+// Media Query for tablet portrait view or smaller
+@media screen and (max-width: 800px) {
+  h1 {
+    @include font-style(30px, 40px, 1.6px, $font-light, $gray);
+  }
 }

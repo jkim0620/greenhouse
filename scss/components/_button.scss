@@ -3,10 +3,20 @@
   @include button-style(auto, auto, 3px, $blue);
   padding: 10px 20px;
   margin-top: 40px;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
 
 .link-btn {
   @include font-style(13px, 20px, 1.17px, $font-bold, $green);
   @include button-style(auto, auto, none, transparent);
   margin-top: 10px;
+  &:hover {
+    color: $dark-green;
+  }
+}
+
+.arrow-right {
+  margin-left: 10px;
 }
