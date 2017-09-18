@@ -1,16 +1,25 @@
 .footer-section {
-  display: flex;
-  height: 70px;
+  @include flexbox;
   background-color: $dark-gray;
+  height: 70px;
+  ul {
+    margin-left: 60%;
+    margin-top: 25px;
+  }
+  li {
+    a {
+      color: $blue;
+    }
+    display: inline;
+    margin: 20px;
+  }
 }
 
 .logo-container {
-  width: 25%;
   background-color: #000;
-}
-
-.sns-container {
-  width: 75%;
-  background-color: $gray;
-  text-align: right;
+  padding: 0 60px;
+  img {
+    margin-top: 20px;
+    width: 150px;
+  }
 }

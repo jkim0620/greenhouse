@@ -3,19 +3,18 @@
 }
 
 .top-card, .card {
+  @include flex(1);
   background: $white;
 }
 
 .top-card {
-  @include flex(1);
   border: 3px $mid-gray solid;
   border-radius: 4px;
-  padding: 50px 150px;
+  padding: 50px 150px 70px 150px;
   margin: 0 10px 20px 10px;
 }
 
 .card {
-  @include flex(1);
   border: 2px $mid-gray solid;
   margin: 10px;
   border-radius: 4px;

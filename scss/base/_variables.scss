@@ -47,9 +47,8 @@ Base Font
        url('../assets/lineto-akkurat-bold-s.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-// Main Font Style
-$default-font-family: "Avenir", "sans-serif";
-
 $font-regular: "Akkurat";
 $font-light: "Akkurat-light";
 $font-bold: "Akkurat-bold";
+
+$default-font-family: "Avenir", "sans-serif";
