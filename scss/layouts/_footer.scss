@@ -7,14 +7,26 @@
     margin-top: 25px;
   }
   li {
-    a {
-      color: $blue;
-    }
-    a:hover {
-      color: $dark-blue;
-    }
     display: inline;
     margin: 20px;
+    .fa-twitter {
+      color: $twitter-blue;
+      &:hover {
+        color: $twitter-hover;
+      }
+    }
+    .fa-facebook {
+      color: $facebook-blue;
+      &:hover {
+        color: $facebook-hover;
+      }
+    }
+    .fa-linkedin {
+      color: $linkedin-blue;
+      &:hover {
+        color: $linkedin-hover;
+      }
+    }
   }
 }
 
