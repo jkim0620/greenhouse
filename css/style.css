@@ -11,21 +11,15 @@ Base Font
 @font-face {
   font-family: 'Akkurat';
   src: url("../assets/lineto-akkurat-regular-s.eot");
-  /* IE9 Compat Modes */
-  src: url("../assets/lineto-akkurat-regular-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-regular-s.woff") format("woff"), url("../assets/lineto-akkurat-regular-s.ttf") format("truetype"), url("../assets/lineto-akkurat-regular-s.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  src: url("../assets/lineto-akkurat-regular-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-regular-s.woff") format("woff"), url("../assets/lineto-akkurat-regular-s.ttf") format("truetype"), url("../assets/lineto-akkurat-regular-s.svg#svgFontName") format("svg"); }
 @font-face {
   font-family: 'Akkurat-light';
   src: url("../assets/lineto-akkurat-light-s.eot");
-  /* IE9 Compat Modes */
-  src: url("../assets/lineto-akkurat-light-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-light-s.woff") format("woff"), url("../assets/lineto-akkurat-light-s.ttf") format("truetype"), url("../assets/lineto-akkurat-light-s.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  src: url("../assets/lineto-akkurat-light-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-light-s.woff") format("woff"), url("../assets/lineto-akkurat-light-s.ttf") format("truetype"), url("../assets/lineto-akkurat-light-s.svg#svgFontName") format("svg"); }
 @font-face {
   font-family: 'Akkurat-bold';
   src: url("../assets/lineto-akkurat-bold-s.eot");
-  /* IE9 Compat Modes */
-  src: url("../assets/lineto-akkurat-bold-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-bold-s.woff") format("woff"), url("../assets/lineto-akkurat-bold-s.ttf") format("truetype"), url("../assets/lineto-akkurat-bold-s.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  src: url("../assets/lineto-akkurat-bold-s.eot?#iefix") format("embedded-opentype"), url("../assets/lineto-akkurat-bold-s.woff") format("woff"), url("../assets/lineto-akkurat-bold-s.ttf") format("truetype"), url("../assets/lineto-akkurat-bold-s.svg#svgFontName") format("svg"); }
 /*
 =====================================
  Mixin for Font Style
@@ -50,7 +44,6 @@ body {
   font-family: "Akkurat", "Avenir", "sans-serif";
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   text-align: center;
   font-size: 17px;
   line-height: 25px;
@@ -93,6 +86,9 @@ h4 {
   font-family: "Akkurat";
   color: #686868; }
 
+.font-bold {
+  font-family: "Akkurat"; }
+
 p {
   font-size: 17px;
   line-height: 26px;
@@ -108,13 +104,87 @@ a:visited {
   text-decoration: none;
   color: #686868; }
 
+/*
+=======================
+Media Query
+=======================
+*/
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 1.6px;
+    font-family: "Akkurat-light";
+    color: #686868; }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 1.53px;
+    font-family: "Akkurat";
+    color: #686868; }
+
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1.15px;
+    font-family: "Akkurat";
+    color: #686868; }
+
+  h4 {
+    font-size: 20px;
+    line-height: auto;
+    letter-spacing: 1.08px;
+    font-family: "Akkurat-light";
+    color: #686868; }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.71px;
+    font-family: "Akkurat-light";
+    color: #686868; }
+
+  .subhead {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.71px;
+    font-family: "Akkurat";
+    color: #686868; } }
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    font-family: "Akkurat-light";
+    color: #686868; } }
 .header-section {
   padding-top: 150px; }
 
+/*
+=======================
+Media Query
+=======================
+*/
+@media screen and (max-width: 1100px) {
+  .header-section {
+    padding-right: 20px;
+    padding-left: 20px; } }
 .main-section {
   margin: 0 auto;
   padding: 0 200px 30px 200px; }
 
+/*
+=======================
+Media Query
+=======================
+*/
+@media screen and (max-width: 1100px) {
+  .main-section {
+    padding: 0 50px 30px 50px; } }
+@media screen and (max-width: 800px) {
+  .main-section {
+    padding: 0 20px 30px 20px; } }
 .footer-section {
   display: -webkit-box;
   display: -moz-box;
@@ -124,13 +194,15 @@ a:visited {
   background-color: #252526;
   height: 70px; }
   .footer-section ul {
-    margin-left: 60%;
+    margin-left: 55%;
     margin-top: 25px; }
   .footer-section li {
     display: inline;
     margin: 20px; }
     .footer-section li a {
       color: #81ACDB; }
+    .footer-section li a:hover {
+      color: #4b8bd1; }
 
 .logo-container {
   background-color: #000;
@@ -139,6 +211,24 @@ a:visited {
     margin-top: 20px;
     width: 150px; }
 
+/*
+=======================
+Media Query
+=======================
+*/
+@media screen and (max-width: 1100px) {
+  .footer-section ul {
+    margin-left: 0; } }
+@media screen and (max-width: 800px) {
+  .logo-container {
+    background-color: #000;
+    padding: 0 30px; }
+    .logo-container img {
+      margin-top: 20px;
+      width: 100px; }
+
+  .footer-section li {
+    margin: 10px; } }
 body {
   background-color: #f3f3f3;
   background-image: url("../assets/flower.png");
@@ -168,13 +258,15 @@ body {
     cursor: pointer; }
   .blue-btn:focus {
     outline: none; }
+  .blue-btn:hover {
+    background-color: #4b8bd1; }
 
 .link-btn {
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 1.17px;
   font-family: "Akkurat-bold";
-  color: #009991;
+  color: #0bb3a9;
   width: auto;
   height: auto;
   -webkit-border-radius: none;
@@ -191,6 +283,11 @@ body {
     cursor: pointer; }
   .link-btn:focus {
     outline: none; }
+  .link-btn:hover {
+    color: #0b847d; }
+
+.arrow-right {
+  margin-left: 10px; }
 
 .card-wrapper {
   display: -webkit-box;
@@ -205,18 +302,30 @@ body {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   background: #ffffff; }
 
 .top-card {
   border: 3px #e2e2e2 solid;
-  border-radius: 4px;
   padding: 50px 150px 70px 150px;
   margin: 0 10px 20px 10px; }
 
 .card {
   border: 2px #e2e2e2 solid;
   margin: 10px;
-  border-radius: 4px;
   padding: 40px 35px; }
+
+@media screen and (max-width: 800px) {
+  .card-wrapper {
+    display: block; }
+
+  .top-card {
+    border: 3px #e2e2e2 solid;
+    padding: 40px 35px;
+    margin: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
